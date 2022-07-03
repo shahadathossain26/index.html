@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30">
+    <title>Form</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Contact Us</legend>
+            <label for="first_name">First Name:</label>
+            <input id="first_name" name="first name" type="text" placeholder="Enter your first name">
+            <br>
+            <label for="last_name">Last Name: </label>
+            <input id="last_name" name="last name" type="text" placeholder="Enter you last name">
+            <br><br>
+
+            <input type="radio" name="gender">Male <br>
+            <input type="radio" name="gender">Female <br>
+
+            Favourite programming language: 
+            <select name="Planguage" id="Planguage" >
+                <option value="C">C</option> 
+                <option value="C++">C++</option>
+                <option value="C#">C#</option>
+                <option value="Java">Java</option>
+                <option value="Javascript">Javascript</option>
+                <option value="Python">Python</option>
+                
+            </select><br><br>
+            <textarea name="Tarea" id="Tarea" cols="30" rows="10" placeholder="Enter your comment"></textarea><br>
+
+            <input type="Submit" value="Send">
+            <input type="Reset" name="Reset" id="Reset"><br>
+
+            <button type="button" onclick="alert('Hello World')">Click Me!</button><br>
+
+            <label for="arijit">Select your favourite song: </label>
+            <input list="songs" name="arijit" id="arijit">
+             <datalist id="songs">
+                 <option value="Soch na sake"></option>
+                 <option value="Tera Fittor"></option>
+                 <option value="Lag ja gale"></option>
+                 <option value="Darkhast"></option>
+            </datalist><br><br>
+
+             <label for="color">Select your favourite color: </label>
+             <input type="color" name="color" id="color"><br><br>
+
+             <label for="date">Select your birthdate: </label>
+             <input type="date" id="date"><br><br>
+
+             <label for="time">What time is it? </label>
+             <input type="time" id="time"><br><br>
+
+             <label for="datetime"></label>
+             <input type="datetime-local" name="datetime" id="datetime"><br><br>
+
+             <label for="email">Enter your e-mail: </label>
+             <input type="email" name="email" id="email"><br><br>
+
+              <label for="month">Enter your birthday month: </label>
+              <input type="month" name="month" id="month"><br><br>
+
+              <label for="vol">Volumn(0-75): </label>
+              <input type="range" id="vol" min="0" max="75">
+        </fieldset>
+    </form><br><br>
+
+    <p id="demo"></p>
+    <br>
+    <br>
+    <picture>
+        <source srcset="blue_rose.jpg" media="(max-width: 300px)">
+        <source srcset="3445.jpg" media="(max-width:700px)">
+        <img src="../images/blue_rose.jpg" alt="Bluerose" style="width:auto;">
+    </picture>
+</body>
+</html>

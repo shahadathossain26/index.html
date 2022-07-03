@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form2</title>
+    </head>
+    <body>
+        <header>
+            <h1>Registration form</h1>
+        </header>
+        <main>
+            <form action="">
+                <div>
+                    <label for="fullname">FullName:</label>
+                    <input type="text" name="fullname" id="fullname" required>
+                </div><br>
+
+                <div>
+                    <label for="e-mail">E-mail:</label>
+                    <input type="email" name="e-mail" id="e-mail">
+                </div><br>
+
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password">
+                </div><br>
+
+                <div>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" name="dob" id="dob">
+                </div><br>
+
+                <div>
+                    <label for="photo">Choose your photo:</label>
+                    <input type="file" name="photo" id="photo">
+                </div><br>
+
+                <div>
+                    <label for="gender">Gender:</label>
+                    <input type="radio" name="gender" id="gender" value="male"> Male
+                    <input type="radio" name="gender" id="gender" value="female"> Female
+                </div><br>
+
+                <div>
+                    <label for="religion">Religion:</label>
+                    <input type="checkbox" name="religion" id="religion" value="islam"> Islam
+                    <input type="checkbox" name="religion" id="religion" value="hindu"> Hindu
+                </div><br>
+
+                <div>
+                    <label for="department">Department:</label>
+                    <select name="department" id="department">
+                        <option value="cse" selected>CSE</option>
+                        <option value="eee">EEE</option>
+                        <option value="ct">CT</option>
+                        <option value="mt">MT</option>
+                    </select>
+                </div><br>
+
+                <div>
+                    <label for="description">Description:</label><br>
+                    <textarea name="description" id="description" cols="30" rows="10" placeholder="Submit your comment"></textarea>
+                </div><br>
+
+                <div>
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Clear" disabled>
+                </div>
+
+            </form>
+        </main>
+    </body>
+</html>
